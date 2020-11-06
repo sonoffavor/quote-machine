@@ -1,7 +1,62 @@
 body {
+    display: flex;
     background-color: #73BFF9;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+
+#author {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+#avatar {
+    display: block;
+    margin: auto;
+    width: 15%;
+    border-radius: 50%;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 1);
+}
+
+#text {
+    padding-top: 20px;
 }
 
 #quote-box {
     background-color: white;
+    border-radius: 2%;
+    padding: 30px 55px;
+    width: 45rem;
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
+
+#new-quote {
+    float: right;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
