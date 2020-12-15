@@ -9,6 +9,7 @@ body {
 #author {
     text-align: right;
     padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #avatar {
@@ -23,6 +24,8 @@ body {
 }
 
 #text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
     padding-top: 20px;
 }
 
@@ -60,3 +63,99 @@ body {
     background: #55ACEE;
     color: white;
   }
+
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+      #quote-box {
+          width: 30rem;
+      }
+
+      #avatar {
+        width: 20%;
+    }
+
+  }
+
+  @media only screen and (max-width: 451px) {
+    #quote-box {
+        width: 25rem;
+    }
+
+    #text {
+        font-size: 1.1rem;
+    }
+
+    #avatar {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    #quote-box {
+        padding: 25px 30px;
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #avatar {
+        width: 25%;
+    }
+
+    #quote-box {
+        padding: 25px 30px;
+        width: 18rem;
+    }
+
+}
+
+@media only screen and (max-height: 414px) {
+    #quote-box {
+        width: 38rem;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+    #avatar {
+        width: 12%;
+    }
+
+}
+
+@media only screen and (max-height: 375px) {
+    #quote-box {
+        padding: 25px 50px;
+        width: 38rem;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+    #author {
+        padding-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-height: 320px) {
+    #quote-box {
+        padding: 20px 45px;
+        width: 33rem;
+    }
+
+    #text {
+        font-size: 0.9rem;
+        padding-top: 8px;
+        margin-bottom: 0.8rem;
+    }
+
+    #author {
+        font-size: 0.9rem;
+        padding-bottom: 0;
+    }
+
+}
