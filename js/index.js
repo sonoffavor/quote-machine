@@ -31,7 +31,8 @@ const quotes = [
     author: "Thomas Alva Edison",
     quote: "Genius is one percent inspiration, ninety-nine percent perspiration."}
     ];
-    
+
+// Randomly displays image, author, quote in specified html elements
 function setQuote() {
     let randomNumber = Math.floor(Math.random() * quotes.length);
 
@@ -40,11 +41,19 @@ function setQuote() {
     $("#author").html("-" + quotes[randomNumber].author);
 }
 
-// Displays randomly generated quote
+// When page is loaded, display a random quote
 setQuote();
 
-// User generates new quote
+// Button generates a random new quote
 $("button").on("click", function() {setQuote()});
+
+// Get the current date
+var date = new Date();
+// Get full year
+var year = date.getFullYear();
+
+// Display attribution and current copyright
+$("#attribution-copyright").html("Designed by Ben Rietman, Copyright " + year);
 
 
 
